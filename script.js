@@ -7,5 +7,3 @@ buttonToggle.addEventListener('click', () => {
   buttonToggle.classList.toggle('button--black');
   buttonToggle.classList.toggle('button--white');
 });
-
-
