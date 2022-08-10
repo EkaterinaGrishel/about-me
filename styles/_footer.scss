@@ -1,0 +1,28 @@
+.footer {
+    background-color: #262626;
+    color: $primary-color;
+    padding: 100px 0;
+    &__paragraph {
+        color: #B1B1B1;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        padding: 80px 0 78px;
+        &__paragraph {
+            font-size: 1rem;
+            line-height: 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 70px 0 65px;
+        &__paragraph {
+            font-size: 0.9rem;
+            line-height: 23px;
+        }
+    }
+}

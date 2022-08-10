@@ -1,0 +1,48 @@
+.menu {
+    font-size: 1.1rem;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    &__item {
+        color: $primary-color;
+        text-decoration: none;
+        transition: all .2s;
+        &:hover {
+            text-decoration: underline;
+        }
+        &:not(:last-child)::after {
+            content: " ";
+            display: inline-block;
+            width: 1.5px;
+            height: 16px;
+            background: #D8D5D5;
+            margin: 0px 25px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .menu {
+        font-size: 0.9rem;
+        line-height: 23px;
+        &__item {
+            &:not(:last-child)::after {
+                height: 13px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        margin: 10px auto;
+        &__item {
+            display: block;
+            &:not(:last-child)::after {
+                display: block;
+                margin: 5px auto;
+            }
+        }
+    }
+}
